@@ -37,11 +37,9 @@ extern const Except_T Assert_Failed;
 #define EXCEPT(e)\
 				if(Except_flag == Except_entered)\
 					Except_stack = Except_stack->prev;\
-					printf("%d\n",Except_entered);\
 					}\
 					else if (Except_frame.exception == &(e)){\
 						Except_flag = Except_handled;\
-						printf("%d\n",Except_entered);\
 						
 #define ELSE\
 				if(Except_flag == Except_entered)\
