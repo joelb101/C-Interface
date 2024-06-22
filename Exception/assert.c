@@ -1,7 +1,7 @@
-#include "assert.h"
+#include "Assert.h"
 
 const Except_T Assert_Failed = {"Assertion Failed"};
 
-void (assert)(int e){
-	assert(e);
+void (Assert)(int e){
+	Assert(e);
 }

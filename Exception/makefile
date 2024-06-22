@@ -4,8 +4,8 @@ sample.o: sample.c except.h
 	gcc -c sample.c
 except.o: except.c except.h
 	gcc -c except.c
-assert.o: assert.c assert.h
+assert.o: assert.c Assert.h
 	gcc -c assert.c
-assert.h: except.o
+Assert.h: except.o
 clean:
 	rm *.o sample
